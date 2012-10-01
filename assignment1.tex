@@ -1,0 +1,72 @@
+\documentclass{article}
+\pagestyle{plain}
+\usepackage{amsmath}
+\begin{document}
+
+\title{Assignment 1 - Differential Equations }
+
+\date{July 22, 2012}
+\author{Mohan S Nayaka}
+\renewcommand{\arraystretch}{1.5}
+\maketitle
+1. Newton's law of cooling
+
+The law states that the rate of change of temperature of an object
+is proportional to the difference between its own temperature and
+the temperature of its surroundings. This law makes a statement about
+the instantaneous rate of change of temperature.
+The differential equation for this law is:
+
+\[ \frac{dT}{dt} = k(T-T_0) \]
+where T is the temperature of the object at time t, $T_0$ is the temperature of the surrounding environment (constant) and k is a constant of proportionality.
+Solving this differential equation, we obtain:
+\[ \frac{dT}{T-T_0} = kdt \]
+Integrate both sides to get
+\[ ln(T - T_0) = kt + C' \]
+\begin{center}
+\begin{tabular}{|c|}
+\hline
+$T = T_0 + C e^{kt}$
+\\
+\hline
+\end{tabular}
+\\
+where $C=e^{C'}$
+\end{center}
+
+This equation implies that the temperature of the body exponentially decreases to that of the surroundings.
+\\
+\\
+\maketitle
+2. Heat Law
+
+The heat law describes the distribution of heat (or variation in temperature) in a given region over time.
+The equation of the heat law is given by:
+
+\begin{center}
+\begin{tabular}{|c|}
+\hline
+$ \frac{\partial u} {\partial t} - \alpha (\frac{\partial^2 u}{\partial x^2} +\frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2}) = 0 $
+\\
+\hline
+\end{tabular}
+where $\alpha$ is a positive constant.
+\end{center}
+Suppose one has a function \emph{u} which describes the temperature at a given location (x, y, z). This function will change over time as heat spreads throughout space. The heat equation is used to determine the change in the function u over time. One of the interesting properties of the heat equation is the maximum principle which says that the maximum value of u is either earlier in time than the region of concern or on the edge of the region of concern. This is essentially saying that temperature comes either from some source or from earlier in time because heat permeates but is not created from nothingness.
+\\
+\\
+\maketitle
+3. Importance of Computational Science
+\\
+
+Computational science (or scientific computing) is the subfield of computer science concerned with constructing mathematical models and quantitative analysis techniques and using computers to analyze and solve scientific problems. In practical use, it is typically the application of computer simulation and other forms of computation from theoretical computer science to problems in various scientific disciplines. The field is a branch of computer science (the study of computation, computers and information processing) but is different from theory and experiment which are the traditional forms of science and engineering. The scientific computing approach is to gain understanding, mainly through the analysis of mathematical models implemented on computers.
+
+Computational methods are essential where it is impossible to write down equations or laws from which predictions can be derived analytically. A few examples illustrate this point:
+\begin{itemize}
+\item Genomes consisting of billions of nucleotides arranged on DNA in a specific order constitute primary data that is required for detailed understanding of  cellular biology. Quantitative models and computation are needed to predict biological function from structural information at the molecular level.
+\item Predicting the effects on the earth's climate of the burning of fossil fuels requires simulation that takes account of many interacting physical and biological processes as well as the earth's topography.
+\item Theories of complex phenomena like fatigue and fracture of metals are embodied in “multi-scale” computer codes that simulate these processes from atomic to macroscopic scales.
+Theories of complex phenomena like fatigue and fracture of metals are embodied in multi-scal computer codes that simulate these processes from atomic to macroscopic scales.
+\end{itemize}
+The benefit of applying computational science is a qualitative change in our ability to study scientific problems of pressing social and economic importance.
+\end{document}
